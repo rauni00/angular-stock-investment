@@ -1,0 +1,5 @@
+<div class="stocks">
+    <h2 class="title">Stock Investment Tracker</h2>
+    <app-stock-filter (SearchText)="onSearch($event)" (onClick)="onFilterClick()"></app-stock-filter>
+    <app-stock-item [items]="items" (onDelete)="onDelete($event)"></app-stock-item>
+</div>

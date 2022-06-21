@@ -1,0 +1,8 @@
+<div class="stock-item" *ngFor="let item of items">
+    <app-investment-date [date]="item.date"></app-investment-date>
+    <div class="stock-item__description">
+        <h2>{{ item.title }}</h2>
+        <div class="stock-item__price">${{ item.amount }}</div>
+        <button class="delete" (click)="showId(item.id)">Delete</button>
+    </div>
+</div>

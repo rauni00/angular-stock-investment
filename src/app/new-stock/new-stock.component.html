@@ -1,0 +1,7 @@
+<div *ngIf="toggle" class="add-stock">
+    <button (click)="startEditingHandler()">Add to Stock</button>
+</div>
+<div *ngIf="toggleCBtn" class="new-stock">
+    <app-stock-form [toggle]="toggle" (FormData)="formData($event)" (myOutput)="ToggleCancel($event)">
+    </app-stock-form>
+</div>
